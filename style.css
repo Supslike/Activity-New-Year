@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'MochiyPopOne';
+    src: url('static/MochiyPopOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 15vh;
+}
+
+.left, .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: MochiyPopOne;
+    font-weight: 300;
+    color: #F5E8DE;
+    text-shadow: 3px 3px 10px black;
+    font-size: 0.8in;
+}
+
+.backdrop-filter {
+    backdrop-filter: brightness(80%) saturate(80%);
+    padding-bottom: 10vh;
+}
+
+body {
+    background-image: url("static/Blue\ Winter\ Wonderland\ Snow\ Event\ Instagram\ Post.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.left {
+    border-right: white 5px solid;
+}
+
+.right {
+    border-left: white 5px solid;
+}
+
+.event {
+    height: 30vh;
+    width: 80%;
+}
+
+/* Reveal Animation */
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.event h2 {
+    font-family: MochiyPopOne;
+    color: #F5E8DE;
+    text-shadow: 3px 3px 10px black;
+    margin-bottom: 5px;
+}
+
+.event p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #88B7DF;
+    font-size: 20px;
+    text-indent: 0.3in;
+}
